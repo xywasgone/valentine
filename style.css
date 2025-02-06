@@ -99,6 +99,6 @@ canvas {
         transform: translate(-50%, 50%); /* Start below center */
     }
     100% {
-        transform: translate(-50%, -95%); /* End at the center */
+        transform: translate(-50%, -75%); /* End at the center */
     }
 }
