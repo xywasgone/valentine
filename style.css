@@ -1,30 +1,39 @@
+/* Global Style */
 body {
     background: linear-gradient(135deg, #ff9a9e, #fad0c4);
     text-align: center;
     font-family: 'Arial', sans-serif;
     color: white;
     margin: 0;
+    padding: 0;
     overflow: hidden;
+    height: 100vh; /* Pastikan body selalu memenuhi layar */
 }
 
+/* Container untuk teks dan tombol */
 .container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    z-index: 2; /* Pastikan konten berada di atas canvas */
 }
 
+/* Heading (h1) */
 h1 {
     font-size: 3rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
 }
 
+/* Pesan */
 .message {
     font-size: 1.5rem;
     margin: 20px 0;
 }
 
+/* Tombol */
 button {
     background-color: #ff4d6d;
     border: none;
@@ -34,16 +43,35 @@ button {
     border-radius: 30px;
     cursor: pointer;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #e63950;
 }
 
+/* Canvas untuk background */
 canvas {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1; /* Pastikan canvas berada di belakang konten */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Menyesuaikan ukuran font pada layar lebih kecil */
+    }
+
+    .message {
+        font-size: 1.2rem; /* Ukuran pesan lebih kecil */
+    }
+
+    button {
+        padding: 12px 25px; /* Menyesuaikan ukuran tombol */
+        font-size: 1rem;
+    }
 }
