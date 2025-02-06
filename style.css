@@ -80,34 +80,23 @@ canvas {
 /* Animation for the floating message */
 #loveMessage {
     position: absolute;
-    bottom: -100px; /* Start below the screen */
+    top: 70%; /* Start just below the center */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     background: #fff;
     padding: 20px;
     font-size: 24px;
     color: #e63946;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    animation: floatUp 5s forwards, fadeOut 2s 5s forwards;
+    animation: floatUp 4s forwards;
 }
 
 @keyframes floatUp {
     0% {
-        bottom: -100px;
+        transform: translate(-50%, 50%); /* Start below center */
     }
     100% {
-        bottom: 100%;
-        transform: translateX(-50%) translateY(-100vh);
-    }
-}
-
-/* Fade out animation */
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
+        transform: translate(-50%, -50%); /* End at the center */
     }
 }
