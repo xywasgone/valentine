@@ -41,6 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function showLoveMessage() {
-    alert("I Love You! 💖 Happy Valentine's Day!");
-    document.getElementById("bg-music").play();
+    let loveMessage = document.createElement("div");
+    loveMessage.id = "loveMessage";
+    loveMessage.innerHTML = "I Love You! 💖 Happy Valentine's Day!";
+    document.body.appendChild(loveMessage);
+    
+    let bgMusic = document.getElementById("bg-music");
+    bgMusic.play();
 }
