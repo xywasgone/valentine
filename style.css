@@ -89,7 +89,7 @@ canvas {
     color: #e63946;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    animation: floatUp 5s forwards;
+    animation: floatUp 5s forwards, fadeOut 2s 5s forwards;
 }
 
 @keyframes floatUp {
@@ -99,5 +99,15 @@ canvas {
     100% {
         bottom: 100%;
         transform: translateX(-50%) translateY(-100vh);
+    }
+}
+
+/* Fade out animation */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
