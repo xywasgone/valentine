@@ -44,6 +44,7 @@ button {
     cursor: pointer;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
+    z-index: 2; /* Pastikan tombol berada di atas canvas */
 }
 
 button:hover {
@@ -57,7 +58,7 @@ canvas {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Pastikan canvas berada di belakang konten */
+    z-index: 1; /* Pastikan canvas berada di bawah konten */
 }
 
 /* Responsif */
