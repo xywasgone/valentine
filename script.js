@@ -44,11 +44,11 @@ function showLoveMessage() {
     let loveMessage = document.createElement("div");
     loveMessage.id = "loveMessage";
     loveMessage.innerHTML = `
-        <p>Ratih Bunga Aprilia Nirwana,</p>
+        <p><strong>Ratih Bunga Aprilia Nirwana</strong>,</p>
         <p>Di hari yang penuh cinta ini, aku ingin mengungkapkan betapa berartinya dirimu dalam hidupku. Seperti bunga yang indah, kamu memberikan warna dan kehangatan dalam setiap hariku. Cintamu adalah anugerah yang aku syukuri setiap waktu.</p>
         <p>Semoga di hari Valentine ini, kita bisa terus bersama, saling mendukung, dan menjaga cinta ini hingga waktu yang tak terbatas. Kamu adalah kebahagiaan yang tak ternilai, dan aku merasa beruntung memilikimu dalam hidupku.</p>
         <p>Selamat Hari Valentine, sayang. Semoga cintaku selalu bisa membuatmu tersenyum, seperti kamu selalu membuatku bahagia.</p>
-        <p><strong>Dengan segala cintaku,</strong><br>Arsyad</p>
+        <p><strong>Dengan segala cintaku,<br>Arsyad</strong></p>
     `;
     document.body.appendChild(loveMessage);
     
